@@ -22,7 +22,7 @@ from telegram.ext import (
 TOKEN = os.getenv("SUPPORT_BOT_TOKEN", "").strip()
 DATABASE_URL = os.getenv("DATABASE_URL", "").strip()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "").strip()
-AI_MODEL = os.getenv("AI_MODEL", "openai/gpt-oss-120b").strip()
+AI_MODEL = os.getenv("AI_MODEL", "openai/gpt-oss-20b").strip()
 ADMIN_IDS = {
     int(x.strip()) for x in os.getenv("ADMIN_IDS", "").split(",")
     if x.strip().isdigit()
